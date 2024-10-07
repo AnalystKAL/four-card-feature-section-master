@@ -20,18 +20,17 @@ html, body {
 }
 
 main {
-    display: flex;
     width: 100%;
     height: 100%;
-    align-items: center;
-    flex-direction: column;
 }
 
 h1, h2{
     font-weight: 200;
-    font-size: 36;
+    font-size: 36px;
     letter-spacing: 0.25px;
     line-height: auto;
+    text-align: center;
+    margin: 10px;
 }
 
 h2 {
@@ -40,11 +39,21 @@ h2 {
 
 p {
     font-weight: 400;
-    font-size: 13;
+    font-size: 13px;
+    text-align: center;
 }
 
 .main-title {
-    display: flex;
-    flex-direction: column;
-    max-width: 540px;
+    width: 540px;
+    margin: auto;
+}
+
+.slogan {
+    width: 540px;
+    letter-spacing: 0.1px;
+}
+
+.functions {
+    width: 350px;
+    height: 250px;
 }
