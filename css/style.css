@@ -57,3 +57,32 @@ p {
     width: 350px;
     height: 250px;
 }
+
+.supervisor {
+    grid-area: supervisor;
+}
+
+.teambuilder {
+    grid-area: teambuilder;
+}
+
+.karma {
+    grid-area: karma;
+}
+
+.calculator {
+    grid-area: calculator;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-areas: 
+    ".......... teambuilder .........."
+    "supervisor teambuilder calculator"
+    "supervisor karma calculator"
+    ".......... karma .........."
+    ;
+    justify-content: center;
+}
