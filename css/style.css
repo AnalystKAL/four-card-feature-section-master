@@ -76,7 +76,7 @@ img{
     display: flex;
     flex-direction: column;
     background-color: white;
-    box-shadow: 0 10px 10px var(--grayish-blue);
+    box-shadow: 0 15px 20px var(--grayish-blue);
     border-radius: 10px;
 }
 
