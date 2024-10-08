@@ -16,7 +16,7 @@ html, body {
     width: 100vw;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     color: var(--very-dark-blue);
-    font-size: 15px;
+    overflow: hidden;
 }
 
 main {
@@ -28,7 +28,6 @@ h1, h2{
     font-weight: 200;
     font-size: 36px;
     letter-spacing: 0.25px;
-    line-height: auto;
     text-align: center;
     margin: 1px;
 }
@@ -63,8 +62,11 @@ img{
 
 .slogan {
     font-weight: 200;
-    width: 540px;
+    font-size: 15px;
+    max-width: 540px;
+    line-height: 25px;
     letter-spacing: 0.1px;
+    padding: 10px 20px 10px 20px;
 }
 
 .functions {
@@ -77,7 +79,7 @@ img{
     flex-direction: column;
     background-color: white;
     box-shadow: 0 15px 20px var(--grayish-blue);
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .function-title{
@@ -100,18 +102,22 @@ img{
 
 .supervisor {
     grid-area: supervisor;
+    border-top: 5px solid var(--cyan);
 }
 
 .teambuilder {
     grid-area: teambuilder;
+    border-top: 5px solid var(--red);
 }
 
 .karma {
     grid-area: karma;
+    border-top: 5px solid var(--orange);
 }
 
 .calculator {
     grid-area: calculator;
+    border-top: 5px solid var(--blue);
 }
 
 .wrapper {
