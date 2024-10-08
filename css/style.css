@@ -33,6 +33,10 @@ h1, h2{
     margin: 10px;
 }
 
+h1 {
+    margin-top: 80px;
+}
+
 h2 {
     font-weight: 600;
 }
@@ -49,6 +53,7 @@ p {
 }
 
 .slogan {
+    font-weight: 200;
     width: 540px;
     letter-spacing: 0.1px;
 }
@@ -56,6 +61,32 @@ p {
 .functions {
     width: 350px;
     height: 250px;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 10px 10px var(--grayish-blue);
+    border-radius: 10px;
+}
+
+.function-title{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.function-desc {
+    font-weight: 200;
+    text-align: left;
+    line-height: 23px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0;
 }
 
 .supervisor {
@@ -76,7 +107,7 @@ p {
 
 .wrapper {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 30px;
     grid-template-columns: 350px 350px 350px;
     grid-template-areas: 
     ".......... teambuilder .........."
@@ -85,4 +116,5 @@ p {
     ".......... karma .........."
     ;
     justify-content: center;
+    margin-top: 60px;
 }
