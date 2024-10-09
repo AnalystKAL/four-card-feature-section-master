@@ -9,19 +9,14 @@
 }
 
 html, body {
+    min-width: 350px;
     padding: 0;
     margin: 0;
     background-color: var(--very-light-gray);
-    height: 100vh;
-    width: 100vw;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     color: var(--very-dark-blue);
 }
 
-main {
-    width: 100%;
-    height: 100%;
-}
 
 h1, h2{
     font-weight: 200;
@@ -29,6 +24,7 @@ h1, h2{
     letter-spacing: 0.25px;
     text-align: center;
     margin: 1px;
+    margin-inline: auto;
 }
 
 h1 {
@@ -54,9 +50,25 @@ img{
     align-self: self-end;
 }
 
+.wrapper {
+    padding-inline: 2rem;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-areas: 
+    ".......... teambuilder .........."
+    "supervisor teambuilder calculator"
+    "supervisor karma calculator"
+    ".......... karma .........."
+    ;
+    justify-content: center;
+    margin-top: 60px;
+    margin-inline: auto;
+}
+
 .main-title {
-    width: 540px;
-    margin: auto;
+    max-width: 540px;
+    margin-inline: auto;
 }
 
 .slogan {
@@ -119,19 +131,6 @@ img{
     border-top: 5px solid var(--blue);
 }
 
-.wrapper {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: 350px 350px 350px;
-    grid-template-areas: 
-    ".......... teambuilder .........."
-    "supervisor teambuilder calculator"
-    "supervisor karma calculator"
-    ".......... karma .........."
-    ;
-    justify-content: center;
-    margin-top: 60px;
-}
 
 @media(max-width: 375px) {
     .wrapper{
@@ -140,12 +139,9 @@ img{
         align-items: center;
         justify-content: center;
     }
-    .functions {
+    .functions, .main-title {
         max-height: 222px;
-    }
-    .main-title, .functions{
-        max-width: calc(100vw - 20px);
-        margin-left: 20px;
+        max-width: 311px;
     }
     h1, h2 {
         font-size: 24px;
